@@ -24,10 +24,7 @@
         <div id="Basica" class="tab-content" style="display: block;">
             <fieldset>
                 <legend>Configuración de Tarea</legend>
-                <div class="form-group">
-                    <label for="urlList">Lista de URLs:</label>
-                    <textarea id="urlList" rows="5" placeholder="https://www.ejemplo.com/pagina1&#10;https://www.ejemplo.com/pagina2"></textarea>
-                </div>
+                <div class="form-group"><label for="urlList">Lista de URLs:</label><textarea id="urlList" rows="5" placeholder="https://www.ejemplo.com/pagina1&#10;https://www.ejemplo.com/pagina2"></textarea></div>
                 <div class="controls-grid">
                     <div class="form-group"><label for="visitsInput">Visitas por URL:</label><input type="number" id="visitsInput" value="10" min="1"></div>
                     <div class="form-group"><label for="concurrencyInput">Concurrencia:</label><input type="number" id="concurrencyInput" value="5" min="1" max="100"><small>Peticiones simultáneas.</small></div>
@@ -35,28 +32,20 @@
                     <div class="form-group"><label for="retryDelayInput">Retraso Reintento:</label><input type="number" id="retryDelayInput" value="1500" min="0" step="100"><small>Espera en ms.</small></div>
                 </div>
             </fieldset>
-
             <fieldset>
                 <legend>Estrategia de Ataque</legend>
                 <div class="attack-mode-options">
-                    <label><input type="radio" name="attackMode" value="brutal" checked> Ataque Brutal (Máx. Velocidad)</label>
-                    <label><input type="radio" name="attackMode" value="tactical"> Ataque Táctico (Ritmo Controlado)</label>
+                    <label><input type="radio" name="attackMode" value="brutal" checked> Ataque Brutal</label>
+                    <label><input type="radio" name="attackMode" value="tactical"> Ataque Táctico</label>
                 </div>
                 <div id="delay-settings-container" style="display: none;">
-                    <p class="explanation-text" style="margin-top: 15px;">En modo táctico, cada "escuadrón" esperará un tiempo aleatorio después de cada visita antes de continuar. Esto simula un comportamiento más humano.</p>
+                    <p class="explanation-text" style="margin-top: 15px;">En modo táctico, cada "escuadrón" esperará un tiempo aleatorio después de cada visita.</p>
                     <div class="controls-grid" style="margin-top: 10px;">
-                         <div class="form-group">
-                            <label for="min-delay">Delay Mínimo (ms):</label>
-                            <input type="number" id="min-delay" value="300" min="0">
-                        </div>
-                        <div class="form-group">
-                            <label for="max-delay">Delay Máximo (ms):</label>
-                            <input type="number" id="max-delay" value="1500" min="0">
-                        </div>
+                         <div class="form-group"><label for="min-delay">Delay Mínimo (ms):</label><input type="number" id="min-delay" value="300" min="0"></div>
+                         <div class="form-group"><label for="max-delay">Delay Máximo (ms):</label><input type="number" id="max-delay" value="1500" min="0"></div>
                     </div>
                 </div>
             </fieldset>
-
             <fieldset>
                 <legend>Gestión de Presets</legend>
                  <div class="preset-controls">
@@ -67,60 +56,26 @@
                 </div>
             </fieldset>
         </div>
-
         <div id="Avanzada" class="tab-content">
             <fieldset>
                 <legend>Suplantación y Evasión</legend>
-                <div class="form-group">
-                    <label for="refererList">Lista de Referers (Coartada):</label>
-                    <textarea id="refererList" rows="3" placeholder="https://www.google.com/&#10;https://t.co/"></textarea>
-                    <p class="explanation-text">
-                        <strong>¿Qué es?</strong> Es la "coartada" de tu visita. Le dice a la página de destino de dónde vienes (ej. "llegué desde Google").<br>
-                        <strong>¿Por qué se usa?</strong> Para que tu tráfico parezca orgánico y legítimo, no aleatorio. Es una táctica de camuflaje clave.
-                    </p>
-                </div>
-                <div class="form-group">
-                    <label for="userAgentList">Lista de User-Agents (Disfraz):</label>
-                    <textarea id="userAgentList" rows="5" placeholder="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36&#10;Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1"></textarea>
-                    <p class="explanation-text">
-                        <strong>¿Qué es?</strong> Es el "disfraz" de tu visita. Le dice a la página qué dispositivo y navegador eres (ej. "soy un iPhone con Safari").<br>
-                        <strong>¿Por qué se usa?</strong> Para simular una mezcla realista de visitantes y evitar ser detectado como un bot. ¡El camuflaje definitivo!
-                    </p>
-                </div>
-                <div class="form-group">
-                    <label for="proxyList">Lista de Proxies (Ruta Secreta):</label>
-                    <div class="proxy-header"><button id="verify-proxies" class="btn-secondary">Verificar Flota</button></div>
-                    <textarea id="proxyList" rows="5" placeholder="http://192.168.1.1:8080&#10;http://usuario:contraseña@otro-ip.com:3128"></textarea>
-                    <p class="explanation-text">
-                        <strong>¿Qué es?</strong> Es la "ruta secreta". Cada proxy es un servidor intermediario que oculta tu IP real.<br>
-                        <strong>¿Por qué se usa?</strong> Es nuestra arma más poderosa. Hace que cada visita parezca venir de un lugar diferente del mundo, haciéndote casi imposible de bloquear.<br>
-                        <strong>¿Cómo los consigo?</strong> Busca online "free proxy list" como en <a href="https://free-proxy-list.net/es/" target="_blank">free-proxy-list.net</a>.<br>
-                        <strong>Formato:</strong> <code>http://ip:puerto</code>. ¡Usa "Verificar Flota" para eliminar los que no funcionan!
-                    </p>
-                </div>
+                <div class="form-group"><label for="refererList">Lista de Referers (Coartada):</label><textarea id="refererList" rows="3" placeholder="https://www.google.com/&#10;https://t.co/"></textarea><p class="explanation-text"><strong>¿Qué es?</strong> Es la "coartada"...</p></div>
+                <div class="form-group"><label for="userAgentList">Lista de User-Agents (Disfraz):</label><textarea id="userAgentList" rows="5" placeholder="Mozilla/5.0...&#10;..."></textarea><p class="explanation-text"><strong>¿Qué es?</strong> Es el "disfraz"...</p></div>
+                <div class="form-group"><label for="proxyList">Lista de Proxies (Ruta Secreta):</label><div class="proxy-header"><button id="verify-proxies" class="btn-secondary">Verificar Flota</button></div><textarea id="proxyList" rows="5" placeholder="http://192.168.1.1:8080..."></textarea><p class="explanation-text"><strong>¿Qué es?</strong> Es la "ruta secreta"...</p></div>
             </fieldset>
         </div>
-
         <div id="results-dashboard" style="display: none;">
             <div class="status-header">
-                <h3>Reporte de Inteligencia de Misión</h3>
-                <button id="export-csv" class="btn-secondary">Exportar a CSV</button>
+                <h3>Reporte de Inteligencia</h3>
+                <div><button id="export-csv" class="btn-secondary">Exportar a CSV</button><button id="reset-mission" class="btn-warning">Reiniciar Misión</button></div>
             </div>
-            <table id="results-table">
-                <thead><tr><th>URL</th><th>Éxitos</th><th>Fallos</th><th>Tasa Éxito</th><th>Tiempo Prom. (ms)</th></tr></thead>
-                <tbody></tbody>
-            </table>
+            <table id="results-table"><thead><tr><th>URL</th><th>Éxitos</th><th>Fallos</th><th>Tasa Éxito</th><th>Tiempo Prom.</th></tr></thead><tbody></tbody></table>
         </div>
-        <div id="progress-container" class="progress-container" style="display: none;">
-            <div id="progress-bar"></div><span id="progress-text"></span>
-        </div>
-        <div class="action-buttons">
-            <button id="visitButton" class="btn-primary">Ejecutar Misión</button>
-            <button id="stopButton" class="btn-danger" style="display: none;">Abortar Misión</button>
-        </div>
+        <div id="progress-container" class="progress-container" style="display: none;"><div id="progress-bar"></div><span id="progress-text"></span></div>
+        <div class="action-buttons"><button id="visitButton" class="btn-primary">Ejecutar Misión</button><button id="stopButton" class="btn-danger" style="display: none;">Abortar Misión</button></div>
         <div class="status-header">
-            <h3>Consola de Misión (Log en Vivo)</h3>
-            <button id="export-log" class="btn-secondary" style="display: none;">Exportar Log</button>
+            <h3>Consola de Misión (Log)</h3>
+            <div><button id="export-log" class="btn-secondary" style="display: none;">Exportar Log</button><button id="reset-log" class="btn-warning" style="display: none;">Reiniciar Misión</button></div>
         </div>
         <div id="status" class="status-container"></div>
     </div>
