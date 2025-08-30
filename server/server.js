@@ -1,4 +1,4 @@
-// server.js - v3.1 con parche de estabilidad
+// server.js - v3.1 con parche de estabilidad y reporte de órdenes
 
 const express = require('express');
 const cors = require('cors');
@@ -15,15 +15,17 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 app.post('/execute-visit', async (req, res) => {
     let { targetUrl, proxy, headers, retries, retryDelay } = req.body;
+    
+    // ¡AÑADIDO! El Oficial de Comunicaciones reportando para el servicio.
+    console.log(`[Orden Recibida] Visitar: ${targetUrl}` + (proxy ? ` via ${proxy}` : ''));
+
     retries = retries || 0; retryDelay = retryDelay || 1000;
     
-    // --- INICIO DE LA REPARACIÓN ---
-    let startTime; // Declaramos startTime aquí para que sea accesible tanto en try como en catch.
-    // --- FIN DE LA REPARACIÓN ---
+    let startTime; 
 
     for (let attempt = 0; attempt <= retries; attempt++) {
         try {
-            startTime = Date.now(); // Asignamos el valor aquí.
+            startTime = Date.now();
             const requestConfig = { headers: headers || {}, timeout: 10000 };
             
             if (proxy) {
@@ -40,8 +42,6 @@ app.post('/execute-visit', async (req, res) => {
             return res.json({ success: true, status: response.status, statusText: response.statusText, duration, message: `Éxito en intento #${attempt + 1}`});
         
         } catch (error) {
-            // Ahora 'startTime' siempre estará definido, aunque sea 'undefined' si el error ocurre antes,
-            // pero el fallback en 'duration' lo manejará de forma segura.
             const duration = Date.now() - (startTime || Date.now()); 
             const isRetryable = !error.response || error.response.status >= 500;
             
@@ -58,8 +58,11 @@ app.post('/execute-visit', async (req, res) => {
 
 // La ruta /verify-proxy se mantiene igual.
 app.post('/verify-proxy', async (req, res) => {
-    // ... (El código de esta función no necesita cambios)
     const { proxy } = req.body;
+
+    // Reporte de verificación en la terminal del servidor
+    console.log(`[Verificando Flota] Probando proxy: ${proxy}`);
+
     if (!proxy) return res.status(400).json({ success: false, proxy, message: 'No se proporcionó proxy.' });
     try {
         const agent = new HttpsProxyAgent(proxy);
