@@ -78,3 +78,60 @@ input:focus+.slider {box-shadow:0 0 1px var(--primary-color);}
 input:checked+.slider:before {transform:translateX(20px);}
 .slider.round {border-radius:24px;}
 .slider.round:before {border-radius:50%;}
+
+
+/* style.css - Añade esto al final */
+
+/* --- Modal del Historial --- */
+#history-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    max-height: 80vh;
+    border: 1px solid var(--fieldset-border);
+    border-radius: 12px;
+    padding: 0;
+    background: var(--container-bg);
+    color: var(--text-color);
+    box-shadow: 0 5px 30px rgba(0,0,0,0.4);
+}
+
+/* Fondo semi-transparente cuando el modal está abierto */
+#history-modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.modal-header, .modal-footer { padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; }
+.modal-header { border-bottom: 1px solid var(--fieldset-border); }
+.modal-footer { border-top: 1px solid var(--fieldset-border); }
+.modal-header h2 { margin: 0; color: var(--header-color); }
+#close-history { font-size: 24px; padding: 0 12px; line-height: 1; }
+
+#history-list-container {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(80vh - 140px); /* Ajusta altura para evitar desbordamiento */
+}
+
+.history-item {
+    background: var(--bg-color);
+    border: 1px solid var(--fieldset-border);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.history-item-info strong { display: block; font-size: 16px; margin-bottom: 5px; }
+.history-item-info span { font-size: 13px; color: var(--label-color); }
+.history-item-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.history-item-actions button { font-size: 14px; padding: 8px 12px; }
+
+/* --- Mejoras de UI --- */
+.export-options { display: flex; gap: 10px; }
