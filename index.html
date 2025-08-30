@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Imperial v3</title>
+    <!-- ¡NUEVO! Favicon SVG Imperial incrustado directamente -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M19.4,12c0-0.2,0-0.4,0-0.6l2.1-1.7c0.2-0.2,0.2-0.5,0.1-0.7l-2-3.5c-0.1-0.2-0.4-0.3-0.6-0.2l-2.5,1 c-0.5-0.4-1.1-0.7-1.7-1l-0.4-2.6C14.2,2.2,14,2,13.8,2h-4c-0.3,0-0.5,0.2-0.5,0.4l-0.4,2.6c-0.6,0.3-1.2,0.6-1.7,1l-2.5-1 C4.4,4.9,4.1,5,4,5.2l-2,3.5C1.9,8.9,1.9,9.2,2.1,9.4l2.1,1.7c0,0.2,0,0.4,0,0.6s0,0.4,0,0.6l-2.1,1.7c-0.2,0.2-0.2,0.5-0.1,0.7 l2,3.5C4.1,19,4.4,19.1,4.6,19l2.5-1c0.5,0.4,1.1,0.7,1.7,1l0.4,2.6c0,0.2,0.2,0.4,0.5,0.4h4c0.3,0,0.5-0.2,0.5-0.4l0.4-2.6 c0.6-0.3,1.2-0.6,1.7-1l2.5,1c0.2,0.1,0.5,0,0.6-0.2l2-3.5c0.1-0.2,0.1-0.5-0.1-0.7L19.4,12z M12,15.5c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S13.9,15.5,12,15.5z'/></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <header class="main-header">
+            <h1>Módulo Imperial v3</h1>
+            <div class="theme-switcher">
+                <label class="switch"><input type="checkbox" id="theme-toggle" checked><span class="slider round"></span></label>
+            </div>
+        </header>
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'Basica')">Configuración de Misión</button>
+            <button class="tab-link" onclick="openTab(event, 'Avanzada')">Tácticas Avanzadas</button>
+        </div>
+        <div id="Basica" class="tab-content" style="display: block;">
+            <fieldset>
+                <legend>Configuración de Tarea</legend>
+                <!-- ¡MEJORA! Placeholders añadidos -->
+                <div class="form-group">
+                    <label for="urlList">Lista de URLs:</label>
+                    <textarea id="urlList" rows="5" placeholder="https://www.ejemplo.com/pagina1&#10;https://www.ejemplo.com/pagina2"></textarea>
+                </div>
+                <div class="controls-grid">
+                    <div class="form-group"><label for="visitsInput">Visitas por URL:</label><input type="number" id="visitsInput" value="10" min="1"></div>
+                    <div class="form-group"><label for="concurrencyInput">Concurrencia:</label><input type="number" id="concurrencyInput" value="5" min="1" max="100"><small>Peticiones simultáneas.</small></div>
+                    <div class="form-group"><label for="retriesInput">Reintentos:</label><input type="number" id="retriesInput" value="2" min="0" max="10"><small>En fallos de servidor (5xx).</small></div>
+                    <div class="form-group"><label for="retryDelayInput">Retraso Reintento:</label><input type="number" id="retryDelayInput" value="1500" min="0" step="100"><small>Espera en ms.</small></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Gestión de Presets</legend>
+                 <div class="preset-controls">
+                    <select id="preset-select"><option value="">Cargar preset...</option></select>
+                    <!-- ¡MEJORA! Placeholder añadido -->
+                    <input type="text" id="preset-name" placeholder="Ej: Misión Blog Semanal">
+                    <button id="save-preset" class="btn-secondary">Guardar</button>
+                    <button id="delete-preset" class="btn-danger">Borrar</button>
+                </div>
+            </fieldset>
+        </div>
+        <div id="Avanzada" class="tab-content">
+            <fieldset>
+                <legend>Suplantación y Evasión</legend>
+                <div class="form-group">
+                    <label for="refererList">Lista de Referers (Coartada):</label>
+                    <!-- ¡MEJORA! Placeholder añadido -->
+                    <textarea id="refererList" rows="3" placeholder="https://www.google.com/&#10;https://t.co/"></textarea>
+                    <p class="explanation-text">
+                        <strong>¿Qué es?</strong> Es la "coartada" de tu visita. Le dice a la página de destino de dónde vienes (ej. "llegué desde Google").<br>
+                        <strong>¿Por qué se usa?</strong> Para que tu tráfico parezca orgánico y legítimo, no aleatorio. Es una táctica de camuflaje clave.
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="userAgentList">Lista de User-Agents (Disfraz):</label>
+                    <!-- ¡MEJORA! Placeholder añadido -->
+                    <textarea id="userAgentList" rows="5" placeholder="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36&#10;Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1"></textarea>
+                    <p class="explanation-text">
+                        <strong>¿Qué es?</strong> Es el "disfraz" de tu visita. Le dice a la página qué dispositivo y navegador eres (ej. "soy un iPhone con Safari").<br>
+                        <strong>¿Por qué se usa?</strong> Para simular una mezcla realista de visitantes y evitar ser detectado como un bot. ¡El camuflaje definitivo!
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="proxyList">Lista de Proxies (Ruta Secreta):</label>
+                    <div class="proxy-header">
+                        <button id="verify-proxies" class="btn-secondary">Verificar Flota</button>
+                    </div>
+                    <!-- ¡MEJORA! Placeholder añadido -->
+                    <textarea id="proxyList" rows="5" placeholder="http://192.168.1.1:8080&#10;http://usuario:contraseña@otro-ip.com:3128"></textarea>
+                    <p class="explanation-text">
+                        <strong>¿Qué es?</strong> Es la "ruta secreta". Cada proxy es un servidor intermediario que oculta tu IP real.<br>
+                        <strong>¿Por qué se usa?</strong> Es nuestra arma más poderosa. Hace que cada visita parezca venir de un lugar diferente del mundo, haciéndote casi imposible de bloquear.<br>
+                        <strong>¿Cómo los consigo?</strong> Busca online "free proxy list" como en <a href="https://free-proxy-list.net/es/" target="_blank">free-proxy-list.net</a>.<br>
+                        <strong>Formato:</strong> <code>http://ip:puerto</code>. ¡Usa "Verificar Flota" para eliminar los que no funcionan!
+                    </p>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="results-dashboard" style="display: none;">
+            <div class="status-header">
+                <h3>Reporte de Inteligencia de Misión</h3>
+                <button id="export-csv" class="btn-secondary">Exportar a CSV</button>
+            </div>
+            <table id="results-table">
+                <thead><tr><th>URL</th><th>Éxitos</th><th>Fallos</th><th>Tasa Éxito</th><th>Tiempo Prom. (ms)</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="progress-container" class="progress-container" style="display: none;">
+            <div id="progress-bar"></div><span id="progress-text"></span>
+        </div>
+        <div class="action-buttons">
+            <button id="visitButton" class="btn-primary">Ejecutar Misión</button>
+            <button id="stopButton" class="btn-danger" style="display: none;">Abortar Misión</button>
+        </div>
+        <div class="status-header">
+            <h3>Consola de Misión (Log en Vivo)</h3>
+            <button id="export-log" class="btn-secondary" style="display: none;">Exportar Log</button>
+        </div>
+        <div id="status" class="status-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
