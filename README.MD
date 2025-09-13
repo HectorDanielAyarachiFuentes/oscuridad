@@ -59,154 +59,71 @@ El cliente es la interfaz web desde donde controlarás las misiones.
 
 ¡Listo! Ahora puedes configurar y ejecutar tus misiones desde la interfaz del "Módulo Imperial".
 
+## 📚 Datos de Ejemplo para Configuración
 
-### Salida de la Consola
+Aquí tienes listas de ejemplo que puedes copiar y pegar en la aplicación para empezar rápidamente.
 
-```bash
-PS C:\Users\Ramoncito\Documents\GitHub\oscuridad> cd server
-PS C:\Users\Ramoncito\Documents\GitHub\oscuridad\server> npm start
->>
+<details>
+<summary>📋 Lista de Referrers</summary>
 
-> server@1.0.0 start
-> node server.js
-
-
-----------------
- Para ver si funciona y probar
-
- https://beeceptor.com/
-
-https://app.beeceptor.com/console/mis-visitas-prueba-free
-
-
-Secuencia de Lanzamiento
-Dentro de la terminal de Visual Studio Code:
-cd server (Para entrar a la sala de máquinas).
-node server.js (Para arrancar los motores).
-
-
-https://dashboard.webshare.io/11781458/proxy/list?authenticationMethod="username_password"&connectionMethod="direct"&proxyControl="0"&rowsPerPage=10&page=0&order="asc"&orderBy=null&searchValue=""&removeType="refresh_all"
-
- para mas proxy pero de calidad
-
-
-
-
----
-
-refers
-
-
-Claro, aquí tienes la lista de 50 links de referrers sin números:
-
+```
 https://www.google.com/
-
 https://t.co/
-
 https://www.facebook.com/
-
 https://www.bing.com/
-
 https://www.linkedin.com/
-
 https://www.pinterest.com/
-
 https://www.youtube.com/
-
 https://www.instagram.com/
-
 https://www.reddit.com/
-
 https://es.wikipedia.org/
-
 https://www.yahoo.com/
-
 https://www.tumblr.com/
-
 https://www.tiktok.com/
-
 https://www.medium.com/
-
 https://es.quora.com/
-
 https://www.forbes.com/
-
 https://www.bbc.com/
-
 https://www.theguardian.com/
-
 https://www.nytimes.com/
-
 https://www.cnn.com/
-
 https://www.cnet.com/
-
 https://www.stackoverflow.com/
-
 https://www.github.com/
-
 https://bitly.com/
-
 https://www.pinterest.es/
-
 https://es.slideshare.net/
-
 https://www.amazon.com/
-
 https://www.ebay.com/
-
 https://www.vimeo.com/
-
 https://www.dailymotion.com/
-
 https://www.twitch.tv/
-
 https://www.elconfidencial.com/
-
 https://www.elmundo.es/
-
 https://elpais.com/
-
 https://www.huffingtonpost.es/
-
 https://www.bbc.co.uk/
-
 https://www.forosdecoches.com/
-
 https://www.mercadolibre.com/
-
 https://www.rtve.es/
-
 https://www.googleads.g.doubleclick.net/
-
 https://duckduckgo.com/
-
 https://yandex.com/
-
 https://www.bing.es/
-
 https://www.aliexpress.com/
-
 https://www.yelp.com/
-
 https://www.tripadvisor.es/
-
 https://www.forocoches.com/
-
-https://www.elmundo.es/
-
 https://www.nationalgeographic.com/
-
 https://www.abc.es/
+```
 
+</details>
 
+<details>
+<summary>🎭 Lista de User-Agents</summary>
 
-
-
-
-
-User-Agents 
-
+```
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
@@ -257,12 +174,13 @@ Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)
 Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; +http://help.yahoo.com/help/us/slurp)
 Mozilla/5.0 (iPad; CPU OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1
 Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1
+```
 
+</details>
 
-Fuentes
+## 📝 Recursos y Notas Adicionales
 
+*   **Pruebas de Peticiones**: Para verificar que las visitas se están registrando correctamente, puedes usar un servicio como Beeceptor. Crea un endpoint gratuito y úsalo como URL objetivo.
+    *   Ejemplo: `https://app.beeceptor.com/console/mis-visitas-prueba-free`
 
-
-
-
-
+*   **Proxies de Calidad**: Para misiones más serias, considera usar servicios de proxy de pago como Webshare para obtener IPs más fiables y rápidas.
