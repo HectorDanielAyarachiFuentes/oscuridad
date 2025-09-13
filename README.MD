@@ -69,3 +69,200 @@ PS C:\Users\Ramoncito\Documents\GitHub\oscuridad\server> npm start
 
 > server@1.0.0 start
 > node server.js
+
+
+----------------
+ Para ver si funciona y probar
+
+ https://beeceptor.com/
+
+https://app.beeceptor.com/console/mis-visitas-prueba-free
+
+
+Secuencia de Lanzamiento
+Dentro de la terminal de Visual Studio Code:
+cd server (Para entrar a la sala de máquinas).
+node server.js (Para arrancar los motores).
+
+
+https://dashboard.webshare.io/11781458/proxy/list?authenticationMethod="username_password"&connectionMethod="direct"&proxyControl="0"&rowsPerPage=10&page=0&order="asc"&orderBy=null&searchValue=""&removeType="refresh_all"
+
+ para mas proxy pero de calidad
+
+
+
+
+---
+
+refers
+
+
+Claro, aquí tienes la lista de 50 links de referrers sin números:
+
+https://www.google.com/
+
+https://t.co/
+
+https://www.facebook.com/
+
+https://www.bing.com/
+
+https://www.linkedin.com/
+
+https://www.pinterest.com/
+
+https://www.youtube.com/
+
+https://www.instagram.com/
+
+https://www.reddit.com/
+
+https://es.wikipedia.org/
+
+https://www.yahoo.com/
+
+https://www.tumblr.com/
+
+https://www.tiktok.com/
+
+https://www.medium.com/
+
+https://es.quora.com/
+
+https://www.forbes.com/
+
+https://www.bbc.com/
+
+https://www.theguardian.com/
+
+https://www.nytimes.com/
+
+https://www.cnn.com/
+
+https://www.cnet.com/
+
+https://www.stackoverflow.com/
+
+https://www.github.com/
+
+https://bitly.com/
+
+https://www.pinterest.es/
+
+https://es.slideshare.net/
+
+https://www.amazon.com/
+
+https://www.ebay.com/
+
+https://www.vimeo.com/
+
+https://www.dailymotion.com/
+
+https://www.twitch.tv/
+
+https://www.elconfidencial.com/
+
+https://www.elmundo.es/
+
+https://elpais.com/
+
+https://www.huffingtonpost.es/
+
+https://www.bbc.co.uk/
+
+https://www.forosdecoches.com/
+
+https://www.mercadolibre.com/
+
+https://www.rtve.es/
+
+https://www.googleads.g.doubleclick.net/
+
+https://duckduckgo.com/
+
+https://yandex.com/
+
+https://www.bing.es/
+
+https://www.aliexpress.com/
+
+https://www.yelp.com/
+
+https://www.tripadvisor.es/
+
+https://www.forocoches.com/
+
+https://www.elmundo.es/
+
+https://www.nationalgeographic.com/
+
+https://www.abc.es/
+
+
+
+
+
+
+
+User-Agents 
+
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:108.0) Gecko/20100101 Firefox/108.0
+Mozilla/5.0 (X11; Linux i686; rv:108.0) Gecko/20100101 Firefox/108.0
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/108.0.1462.64
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Opera/94.0.4606.19
+Mozilla/5.0 (iPad; CPU OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (Android 13; Mobile; rv:108.0) Gecko/108.0 Firefox/108.0
+Mozilla/5.0 (Android 13; Tablet; rv:108.0) Gecko/108.0 Firefox/108.0
+Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Tablet Safari/537.36
+Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0
+Mozilla/5.0 (PlayStation 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+Mozilla/5.0 (Nintendo Switch; WifiWebAuthApp) AppleWebKit/601.6 (KHTML, like Gecko) NintendoBrowser/5.1.0.22349 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 10; SM-A205U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 11; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 10; SM-G973U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
+Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Safari/605.1.15
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edge/98.0.1108.56
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/94.0.0.0
+Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (Android 10; Mobile; rv:99.0) Gecko/99.0 Firefox/99.0
+Mozilla/5.0 (Linux; Android 11; VIVO 1920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 10; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 12; M2101K6G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 9; SM-G950U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0
+Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Mobile Safari/537.36
+Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/95.0.4638.50 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Edge/15.15063
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)
+Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; +http://help.yahoo.com/help/us/slurp)
+Mozilla/5.0 (iPad; CPU OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1
+
+
+Fuentes
+
+
+
+
+
+

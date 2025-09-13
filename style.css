@@ -20,11 +20,12 @@ body {font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-se
 h1 {color:var(--header-color); margin:0;}
 fieldset {border:1px solid var(--fieldset-border); border-radius:8px; padding:20px; margin-bottom:20px;}
 legend {padding:0 10px; font-weight:600; color:var(--label-color);}
-.tabs {overflow:hidden; border-bottom:2px solid var(--fieldset-border); margin-bottom:20px;}
-.tab-link {background-color:inherit; float:left; border:none; outline:none; cursor:pointer; padding:14px 16px; transition:.3s; font-size:16px; font-weight:600; color:var(--label-color);}
+.tabs {display:flex; border-bottom:2px solid var(--fieldset-border); margin-bottom:20px;}
+.tab-link {background-color:inherit; border:none; outline:none; cursor:pointer; padding:14px 16px; transition:.3s; font-size:16px; font-weight:600; color:var(--label-color); border-bottom: 2px solid transparent; margin-bottom: -2px;}
 .tab-link:hover {background-color:var(--status-bg);}
-.tab-link.active {color:var(--primary-color); border-bottom:2px solid var(--primary-color);}
+.tab-link.active {color:var(--primary-color); border-bottom-color:var(--primary-color);}
 .tab-content {display:none; padding:6px 0;}
+.tab-content.active {display:block;}
 .form-group {margin-bottom:15px;}
 .form-group label {display:block; margin-bottom:8px; font-weight:500; color:var(--label-color);}
 input[type=text],input[type=number],textarea,select {width:100%; padding:12px; border:1px solid var(--border-color); background-color:var(--bg-color); color:var(--text-color); border-radius:5px; box-sizing:border-box; font-size:16px; transition:border-color .3s, background-color .3s;}
@@ -32,7 +33,7 @@ textarea {resize:vertical;}
 textarea::placeholder, input::placeholder {color:var(--label-color); opacity:0.5; font-style:italic;}
 small {color:var(--label-color); display:block; margin-top:5px;}
 .controls-grid {display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:start;}
-.controls-grid label {font-weight:600 !important;}
+.controls-grid .form-group label {font-weight:600;}
 .attack-mode-options {display:flex; justify-content:center; gap:20px; margin:10px 0;}
 .attack-mode-options label {display:flex; align-items:center; gap:8px; cursor:pointer; font-weight:500;}
 button {color:#fff; border:none; padding:12px 20px; border-radius:5px; cursor:pointer; font-size:16px; font-weight:600; transition:background-color .2s, opacity .2s;}
@@ -40,6 +41,8 @@ button {color:#fff; border:none; padding:12px 20px; border-radius:5px; cursor:po
 .btn-secondary {background-color:var(--secondary-color);} .btn-secondary:hover {background-color:var(--secondary-hover);}
 .btn-danger {background-color:var(--danger-color);} .btn-danger:hover {background-color:var(--danger-hover);}
 .btn-warning {background-color:var(--warning-color); color:#212529;} .btn-warning:hover {background-color:var(--warning-hover);}
+.btn-full-width {width: 100%; margin-top: 10px;}
+.hidden {display: none !important;} /* Utility class para ocultar elementos */
 .action-buttons {display:flex; flex-direction:column; gap:10px; margin-top:15px;}
 button:disabled {cursor:not-allowed; background-color:var(--secondary-color); opacity:var(--disabled-opacity);}
 .proxy-header {display:flex; margin-bottom:8px;}

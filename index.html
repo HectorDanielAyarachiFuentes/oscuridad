@@ -17,12 +17,12 @@
             </div>
         </header>
 
-        <div class="tabs">
-            <button class="tab-link active" onclick="openTab(event, 'Basica')">Configuración de Misión</button>
-            <button class="tab-link" onclick="openTab(event, 'Avanzada')">Tácticas Avanzadas</button>
+        <div class="tabs" role="tablist" aria-label="Navegación de configuración">
+            <button id="tab-basica" class="tab-link active" role="tab" aria-selected="true" aria-controls="Basica">Configuración de Misión</button>
+            <button id="tab-avanzada" class="tab-link" role="tab" aria-selected="false" aria-controls="Avanzada">Tácticas Avanzadas</button>
         </div>
         
-        <div id="Basica" class="tab-content" style="display: block;">
+        <div id="Basica" class="tab-content active" role="tabpanel" aria-labelledby="tab-basica">
             <fieldset>
                 <legend>Configuración de Tarea</legend>
                 <div class="form-group"><label for="urlList">Lista de URLs:</label><textarea id="urlList" rows="5" placeholder="https://www.ejemplo.com/pagina1&#10;https://www.ejemplo.com/pagina2"></textarea></div>
@@ -36,7 +36,7 @@
             <fieldset>
                 <legend>Estrategia de Ataque</legend>
                 <div class="attack-mode-options"><label><input type="radio" name="attackMode" value="brutal" checked> Ataque Brutal</label><label><input type="radio" name="attackMode" value="tactical"> Ataque Táctico</label></div>
-                <div id="delay-settings-container" style="display: none;">
+                <div id="delay-settings-container" class="hidden">
                     <p class="explanation-text" style="margin-top: 15px;">En modo táctico, cada escuadrón esperará un tiempo aleatorio después de cada visita.</p>
                     <div class="controls-grid" style="margin-top: 10px;">
                          <div class="form-group"><label for="min-delay">Delay Mínimo (ms):</label><input type="number" id="min-delay" value="300" min="0"></div>
@@ -52,11 +52,11 @@
                     <button id="save-preset" class="btn-secondary">Guardar Preset</button>
                     <button id="delete-preset" class="btn-danger">Borrar</button>
                  </div>
-                 <button id="show-history" class="btn-primary" style="width: 100%; margin-top: 10px;">Ver Historial de Misiones</button>
+                 <button id="show-history" class="btn-primary btn-full-width">Ver Historial de Misiones</button>
             </fieldset>
         </div>
         
-        <div id="Avanzada" class="tab-content">
+        <div id="Avanzada" class="tab-content" role="tabpanel" aria-labelledby="tab-avanzada">
             <fieldset>
                 <legend>Suplantación y Evasión</legend>
                 <div class="form-group"><label for="refererList">Lista de Referers (Coartada):</label><textarea id="refererList" rows="3" placeholder="https://www.google.com/&#10;https://t.co/"></textarea><p class="explanation-text"><strong>¿Qué es?</strong> Es la "coartada" de tu visita. Le dice a la página de destino de dónde vienes (ej. "llegué desde Google").<br><strong>¿Por qué se usa?</strong> Para que tu tráfico parezca orgánico y legítimo, no aleatorio.</p></div>
@@ -65,7 +65,7 @@
             </fieldset>
         </div>
 
-        <div id="results-dashboard" style="display: none;">
+        <div id="results-dashboard" class="hidden">
             <div class="status-header">
                 <h3>Reporte de Inteligencia</h3>
                 <div class="export-options"><button id="export-txt" class="btn-secondary">Exportar Resumen (.txt)</button><button id="export-csv" class="btn-secondary">Exportar Datos (.csv)</button><button id="reset-mission" class="btn-warning">Reiniciar Misión</button></div>
@@ -73,12 +73,12 @@
             <table id="results-table"><thead><tr><th>URL</th><th>Éxitos</th><th>Fallos</th><th>Tasa Éxito</th><th>Tiempo Prom.</th></tr></thead><tbody></tbody></table>
         </div>
         
-        <div id="progress-container" class="progress-container" style="display: none;"><div id="progress-bar"></div><span id="progress-text"></span></div>
-        <div class="action-buttons"><button id="visitButton" class="btn-primary">Ejecutar Misión</button><button id="stopButton" class="btn-danger" style="display: none;">Abortar Misión</button></div>
+        <div id="progress-container" class="progress-container hidden"><div id="progress-bar"></div><span id="progress-text"></span></div>
+        <div class="action-buttons"><button id="visitButton" class="btn-primary">Ejecutar Misión</button><button id="stopButton" class="btn-danger hidden">Abortar Misión</button></div>
         
         <div class="status-header">
             <h3>Consola de Misión (Log)</h3>
-            <div id="log-actions-group" style="display: none;"><button id="export-log" class="btn-secondary">Exportar Log</button><button id="reset-log" class="btn-warning">Reiniciar Misión</button></div>
+            <div id="log-actions-group" class="hidden"><button id="export-log" class="btn-secondary">Exportar Log</button><button id="reset-log" class="btn-warning">Limpiar Log</button></div>
         </div>
         <div id="status" class="status-container"></div>
     </div>
